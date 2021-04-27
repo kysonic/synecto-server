@@ -22,7 +22,7 @@ module.exports = {
         res.render('pages/index',{title: 'Synecto',isAuth:req.isAuthenticated()});
     },
     suicide: function(req,res,next){
-        if(req.query.token!='kytoken8899QQ$$') return res.json({success:false,message:'Token is wrong!'});
+        if(req.query.token!='kytokenioioioio$$') return res.json({success:false,message:'Token is wrong!'});
         User.findOne({'local.email':req.params.email},(err,user)=>{
             if(err) return res.json({success:false,error:err});
             if(!user) return res.json({success:false,message:'There is no user'});

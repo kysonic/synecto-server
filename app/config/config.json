@@ -4,7 +4,7 @@
     "ownUrl": "https://server.synecto.io",
     "appLink": "https://app.synecto.io/",
     "mongoose": {
-        "uri": "mongodb://synecto:syn8899QQ$$@35.196.133.237/synecto",
+        "uri": "mongodb://synecto:synioioioio$$@35.196.133.237/synecto",
         "options": {
             "server": {
                 "socketOptions": {

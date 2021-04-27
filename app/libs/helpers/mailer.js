@@ -14,7 +14,7 @@ smtpConfig = {
     secure: true,
     auth: {
         user: 'designmap.io@gmail.com',
-        pass: 'design8899QQ$$'
+        pass: 'ioioio'
     }
 };
 // Default mail options

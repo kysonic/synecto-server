@@ -1,11 +1,11 @@
 mongo 35.196.133.237/synecto
 
 // admin base
-db.auth("kysonic","kydb8899QQ$$");
+db.auth("kysonic","kydbioioioio$$");
 //
-db.auth("synecto","syn8899QQ$$");
+db.auth("synecto","synioioioio$$");
 
-mongodb://synecto:syn8899QQ$$@35.196.133.237/synecto
+mongodb://synecto:synioioioio$$@35.196.133.237/synecto
 
 
 
