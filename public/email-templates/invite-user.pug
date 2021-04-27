@@ -1,0 +1,9 @@
+extends ./public/email-templates/default.pug
+block content
+    .wrapper(style="color: #70B9F6; font-weight: 300; padding: 30px;")
+        .title-wrapper
+            .title(style="font-size: 28px; color: #626262; font-weight: 300; display:inline-block; vertical-align:top;")= title
+        .title(style='font-size: 24px; color: #ea9e46; font-weight: 300; display:inline-block; vertical-align:top;')=subtitle
+        .message(style="font-size:18px;color: #808080; margin: 20px 0")= message
+        .project(style="font-size:16px;color: #808080; margin: 20px 0")= (youWereInvatedBy+' '+inviter+' '+toJoin+''+projectRu+" \""+projectName+"\" "+projectEn)
+        a(href=token,style="display: block; cursor: pointer; width: 105px;background: #6EBAF9; text-decoration: none; text-align:center; color: #fff; margin: 30px 0 0 0; padding: 10px 15px;")= join

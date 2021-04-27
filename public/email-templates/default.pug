@@ -1,0 +1,16 @@
+include logo
+
+html
+   head
+      meta(charset="utf-8")
+      link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,700', rel='stylesheet')
+   body(style="width:80%;max-width:720px;margin:0 auto;background:#fff;text-align: left;font-family:'Open Sans'; font-weight:100;color: #15334d; font-size: 16px;")
+      header(style="height:145px;display:block;background:#fff; padding: 1px; text-align: left; border: 2px solid #E5E5E5")
+        .stripes(style="width: 100%;height: 100%;background-image: repeating-linear-gradient(90deg, #E9E9E9, #E9E9E9 2px, #fff 2px, #fff 4px);padding: 0px;")
+            .logo(style="width: 255px; height: 45px; padding: 30px; padding-top: 85px;")
+                img(src="cid:logo.png")
+      .content(style="border: 2px solid #E5E5E5; border-top: none;")
+         block content
+      footer(style="text-align: center; color: #70B9F6;padding: 15px; border: 2px solid #E5E5E5; border-top: none;")
+         .enjoy(style="text-align: right; font-size:18px; font-weight: 300; color: #62a6ef")= enjoy
+         .team(style="text-align: right; margin-top: 5px; font-size:16px; font-weight: 100; color: #626262")!= teamMsg

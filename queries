@@ -1,0 +1,1 @@
+db.getCollection('users').find({'system.last':{ $gt : new ISODate("2017-12-01T13:01:45.453Z") }},{'local.email':1}); // Get all

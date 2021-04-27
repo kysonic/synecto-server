@@ -1,0 +1,17 @@
+extends ./public/email-templates/updates.pug
+block content
+   .wrapper(style="color: #626262; text-align:left;font-weight: 300; padding: 30px; text-align: center;")
+      .greeting(style="margin: 2px 0 0 0; font-size: 18px;")= (greeting+' '+name+'!')
+      .title(style="margin: 16px 0 0 0; font-size: 30px; font-weight: 600; color: #6EB9F8")= betav3Title
+      .message(style="font-size:18px; margin-top: 15px;color: #6EB9F8")= betav3SubTitle
+      //1
+      .proposition_one(style="font-size:18px; margin-top: 64px;")= betav3Prop1
+      img(src="cid:beta3_1.png",style="margin-top:32px;width:520px;height:240px;")
+      a(href="https://app.designmap.ru?utm_source=mail_beta_v3",target="_blank",style="text-decoration:none;margin-top: 32px;display:inline-block;font-size:18px;color:#fff;background:#FFA908;border-radius:30px; padding: 10px 30px;")= wannaTry
+      //2
+      .proposition_one(style="font-size:18px; margin-top: 64px;")= betav3Prop2
+      img(src="cid:beta3_2.png",style="margin-top:32px;width:520px;height:240px;")
+      a(href="https://app.designmap.ru?utm_source=mail_beta_v3",target="_blank",style="text-decoration:none;margin-top: 32px;display:inline-block;font-size:18px;color:#fff;background:#FFA908;border-radius:30px; padding: 10px 30px;")= wannaTry
+      // End
+      .end(style="margin-top: 64px; width: 500px; margin: 32px auto;")= betav3Ending
+      a(href="https://vk.com/designmap",target="_blank",style="position: relative;text-decoration:none;margin-top: 0px;display:inline-block;font-size:18px;color:#fff;background:#4D75A3;border-radius:30px; padding: 10px 30px;") VK

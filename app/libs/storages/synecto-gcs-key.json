@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tenacious-works-175319",
+  "private_key_id": "618da7a436bb9744d9cd22823433a37c4cd25f5a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC+4JCr8i4cm7Ce\nOC6xDKWmlmeTsnNdkield0TbSLMlZaQe7vLSXMB9l7VZsnwToyQlsMIz/EE4xPfO\nCM6cWROa7vuCgRUSlgKEmIfl7jE5D9hd07Ydnp0AEZ/GJnEURlO9+MS9qJECy3ph\nT52w7N5rrab0ou8CQCM7qUBt36uDbID45xP9UmBEE9ddXUDSEKX4ax4XNpAFXwlv\nRLBQYrevUWpeqaMbUVF5SSLIwlq9PpVOcIWA8t5lJNLwkbuOH52nTp4pBZlmvF+z\nJcfCubRVa81ecwUfjPVoD6g9Zlr8rjYWZUpph8q0042kydCjN3eL15/W0229mR8c\nYWDbwKrhAgMBAAECggEAEA7hbO3LblG0yqLMXs3DE+A8Z4MQTJNyrWt6yf30QFWs\nOIP+vq7Z7Nb6BUlMQfSsIlWcCPaUYBvGAznfc+zUhujLFQAaDz26iYAxkqj20Cei\nmsYoYJaK+8n/yJJMWhnOisFmf9QyGuuWaKBjklJjJejujk80z1oo/KhxCK1UBxLQ\n5iObt1EkhwvNduVmHVlFLXWpE/gSz+G4MB8067/y/DnY5xzPYpS+/04vipE03zhB\n7DHULZfAIu5K4AUSPAEbzIAhKTyW3EGa/81L5ROwxe7sC2aVuXnSMvs7YVTB7fD7\nAqvC56Dmi2Rq07s+y1rGUnUkorOJZqCiG5LU8K7kPwKBgQD0p6tbwWz6gbE69VVd\nF2Xm1pC8uU0hwBkf8705Olj790NifYRebJzbQ/DrTY83kEEmkgC1ZrFYkqpK4tN9\nblqXcmGSsOQ1sXRzNU1MFzny6ylphkYwgbql1u1CbkHvYFpUM0jlE85s/QCSoPb5\n3pp2Wrztw10zKSgK4XaITYrnewKBgQDHun49T2FySXxJfmTYS6eWilrI7R9q4hgO\nxj4II9t/9Bk2/G/6BpIHd4Yw5kJeqGwMiSQ6dSAsnm6nbUdF/aBmIQ59vkzMZSRM\nihb+czhZ0hgjbdFazPh4KD+zz6WIwqk5xmFjtwHQe6yGaydL7ui/2hfh1oklGQCE\np4X/AAV6UwKBgCu5v82RX2nSPhu8dzpBEUxVct7X+2oZzCPCy0HsJLU7twZmSn8Z\nyFsD5I4ZeYxDsvEyzP+ez/l1lQv3SDc1vuksXzX5eYADLD3e++aqjAfXcbpTbj4D\nIZm8NQFXdV9UCDDeTZvrk0w1V6HdNObpmw+mHfgcn46iP27aZvXrbfT7AoGBAJHI\nkjR2KI6fDNUoKLuoHR9IxZM7YV9GwICoOsb+RU1UAsOb5q/888H3gD9ZEsC89oD/\n6S2yKFXpHqOepBN2WQmyvz0RFkVq3d/wO3Bm8Y6+R1g05Eb+ra4m0riQrCbyz0qY\nfqWmAvEGFJvYwsouDD1dF2mEin5FjZdGIAxNG7J5AoGBAIelMqq/WoK3MFvOF66G\nWDSXae/VUt5GUx7HPMk64YfbETRm9Pm9xNFnFBRkoxt1NYX6QL2RJw4s/mXqCwyQ\nUaEnVxHJGxF0sHy7V6ydR94WOmHU5ub+DtSk3C1fwepJySJRqlo9NTeJv5GhWm3m\npPUkj6DAN+3xiFXAZ48ssENe\n-----END PRIVATE KEY-----\n",
+  "client_email": "synecto-store@tenacious-works-175319.iam.gserviceaccount.com",
+  "client_id": "117552821168665876678",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/synecto-store%40tenacious-works-175319.iam.gserviceaccount.com"
+}

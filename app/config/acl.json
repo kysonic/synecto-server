@@ -1,0 +1,109 @@
+{
+  "create_project": [
+    "all"
+  ],
+  "read_project": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_project": [
+    "project-owner"
+  ],
+  "delete_project": [
+    "project-owner"
+  ],
+  "create_folder": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "read_folder": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_folder": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "delete_folder": [
+    "project-owner"
+  ],
+  "create_file": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "read_file": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_file": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "delete_file": [
+    "project-owner"
+  ],
+  "create_sticker": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "read_sticker": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_sticker": [
+    "sticker-owner"
+  ],
+  "delete_sticker": [
+    "sticker-owner"
+  ],
+  "create_comment": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "read_comment": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_comment": [
+    "comment-owner"
+  ],
+  "delete_comment": [
+    "comment-owner"
+  ],
+  "create_message": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "read_message": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_message": [
+    "message-owner"
+  ],
+  "delete_message": [
+    "message-owner"
+  ],
+  "create_task": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "read_task": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "update_task": [
+    "project-owner",
+    "project-co-author"
+  ],
+  "change_status_task": [
+    "assignee"
+  ],
+  "track_time_task": [
+    "assignee"
+  ],
+  "delete_task": [
+    "project-owner",
+    "task-owner"
+  ]
+}

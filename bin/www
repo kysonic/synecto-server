@@ -1,0 +1,97 @@
+#!/usr/bin/env node
+
+// Errors
+process.on('uncaughtException', function ( err, e ) {
+  console.log(err, err.stack.split("\n"))
+});
+/**
+ * Module dependencies.
+ */
+var app = require('../app');
+var fs = require('fs');
+var path = require('path');
+var debug = require('debug')('redesignmap:server');
+var http = require('http');
+/*var https = require('https');*/
+var socket = require('../app/libs/socket/socket');
+
+/*var sslOptions = {
+  key: fs.readFileSync('ssl/my-private-key.pem'),
+  cert: fs.readFileSync('ssl/my-certificate.pem')
+};*/
+/**
+ * Get port from environment and store in Express.
+ */
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+function startServer() {
+  var server = http.createServer(app);
+  /**
+   * Listen on provided port, on all network interfaces.
+   */
+
+  server.listen(port);
+
+  /** SERVER ERRORS**/
+  server.on('error', function (error) {
+    if (error.syscall !== 'listen') {
+      throw error;
+    }
+
+    var bind = typeof port === 'string'
+        ? 'Pipe ' + port
+        : 'Port ' + port;
+
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+      case 'EACCES':
+        console.error(bind + ' requires elevated privileges');
+        process.exit(1);
+        break;
+      case 'EADDRINUSE':
+        console.error(bind + ' is already in use');
+        process.exit(1);
+        break;
+      default:
+        throw error;
+    }
+  });
+
+  server.on('listening', function() {
+    var addr = server.address();
+    var bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+    console.log('Listening on '+bind);
+  });
+  socket(server,app);
+}
+
+if(require.main === module){
+  // application run directly; start app server
+  startServer();
+} else {
+  // application imported as a module via "require": export function to create server
+  module.exports = startServer;
+}

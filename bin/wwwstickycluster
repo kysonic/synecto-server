@@ -1,0 +1,43 @@
+/** Requires **/
+var app = require('../app');
+var debug = require('debug')('designmap:server');
+var http = require('http');
+var path = require('path');
+var socket = require('../app/libs/socket');
+// Because of socket.io it's necessary to wrap sever by sticky-cluster
+var sticky = require('sticky-session');
+
+/**
+ * Get port from environment and store in Express.
+ */
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+function normalizePort(val) {
+    var port = parseInt(val, 10);
+    if (isNaN(port)) {
+        // named pipe
+        return val;
+    }
+    if (port >= 0) {
+        // port number
+        return port;
+    }
+    return false;
+}
+
+var http = require('http'),
+server = http.createServer(app);
+socket(server,app);
+
+if (!sticky.listen(server, 3000)) {
+  // Master code
+  server.once('listening', function() {
+    console.log('server started on 3000 port');
+  });
+} else {
+  // Worker code
+}

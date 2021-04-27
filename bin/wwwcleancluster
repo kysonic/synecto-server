@@ -1,0 +1,35 @@
+var cluster = require('cluster');
+
+/**
+ * Start worker (cpu core)
+ */
+function startWorker() {
+    var worker = cluster.fork();
+    console.log('CLUSTER: Worker %d started', worker.id);
+}
+/**
+ * Check cpu cores and start new worker.
+ */
+if(cluster.isMaster){
+    require('os').cpus().forEach(function(){
+        startWorker();
+    });
+
+    /**
+     * If worker disconnect - log this;
+     */
+    cluster.on('disconnect', function(worker){
+        console.log('CLUSTER: Worker %d disconnected from the cluster.',
+            worker.id);
+    });
+
+    /**
+     * Set a new worker if some worker is down
+     */
+    cluster.on('exit', function(worker, code, signal){
+        console.log('CLUSTER: Worker %d died with exit code %d (%s)',worker.id, code, signal);
+        startWorker();
+    });
+} else {
+    require('./www')();
+}

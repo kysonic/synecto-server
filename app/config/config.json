@@ -1,0 +1,57 @@
+{
+    "port": 3000,
+    "debug": true,
+    "ownUrl": "https://server.synecto.io",
+    "appLink": "https://app.synecto.io/",
+    "mongoose": {
+        "uri": "mongodb://synecto:syn8899QQ$$@35.196.133.237/synecto",
+        "options": {
+            "server": {
+                "socketOptions": {
+                    "keepAlive": 1,
+                    "connectTimeoutMS": 30000
+                }
+            }
+        },
+        "db": {
+            "server": "localhost",
+            "name": "synecto",
+            "port": 27017
+        }
+    },
+    "session": {
+        "secret": "plexSecret",
+        "key": "sid",
+        "cookie": {
+            "path": "/",
+            "httpOnly": true,
+            "maxAge": null
+        }
+    },
+    "storages": {
+        "googleDrive": {
+            "clientID": "32127497436-keders7gf6lpaipsq889rnp9k6fs4ihh.apps.googleusercontent.com",
+            "clientSecret": "2krfO5-TBJ_If7Sk6SThgISw"
+        },
+        "s3": {
+            "clientID": "AKIAI2JY5XEGNG4R6BXQ",
+            "clientSecret": "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"
+        }
+    },
+    "mailgun": {
+        "apiKey": "key-98a0d5a9a42cb678982eae299958dc79",
+        "domain": "mail.synecto.io"
+    },
+    "adminMail": "soooyc@gmail.com",
+    "paymentToken":"m0a0sccc78sad9d9dmmsd0ddaasss==-",
+    "gumroad": {
+        "token":"4f053e4cd45cc841bd80b27a8abe984d118009a12905ee2322223a563b5a084e",
+        "appID":"267b112e2919db7ee645219b5a29afff79673225ffbfdd41252a6d0f076251ec",
+        "appSecret": "dda02dde06556c65e752b55cd5e9540cc6fb453192b0f2dde3be40a0babf25a2"
+    },
+    "AWS": {
+        "AWS_ACCESS_KEY_ID":"AKIAJ77QID2JUL4F3LRA",
+        "AWS_SECRET_ACCESS_KEY":"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",
+        "AWS_REGION":"eu-central-1"
+    }
+}

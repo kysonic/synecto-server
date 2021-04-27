@@ -1,0 +1,17 @@
+extends ./public/email-templates/default.pug
+block content
+   .wrapper(style="color: #626262; text-align:left;font-weight: 300; padding: 30px; text-align: center;")
+      .greeting(style="margin: 2px 0 0 0; font-size: 18px;")= (greeting+' '+name+'!')
+      .title(style="margin: 16px 0 0 0; font-size: 30px; font-weight: 600; color: #6EB9F8")= paymentSuccessTitle
+      .message(style="font-size:18px; margin-top: 15px;color: #6EB9F8")= (plan+' "'+planDetails.name+'" '+hasBeenConnected)
+      //details
+      .proposition_one(style="font-size:18px; margin-top: 64px;")= details
+      ul.details(style="list-style:none; color: #626262; margin:0; padding:0; padding-top: 15px; padding-bottom: 25px;")
+         each val, index in planDetails
+            li
+               .prop(style="display:inline-block")= (locs[lang][index]+': ')
+               .val(style="display:inline-block; font-weight: 700; margin-left: 20px;")= val
+      a(href="https://app.synecto.io/activate",target="_blank",style="text-decoration:none;margin-top: 32px;display:inline-block;font-size:18px;color:#fff;background:#FFA908;border-radius:30px; padding: 10px 30px;")= planManagement
+      //end
+      .end(style="margin-top: 64px; width: 500px; margin: 32px auto;")= betav3Ending
+      a(href="https://vk.com/designmap",target="_blank",style="position: relative;text-decoration:none;margin-top: 0px;display:inline-block;font-size:18px;color:#fff;background:#4D75A3;border-radius:30px; padding: 10px 30px;") VK
